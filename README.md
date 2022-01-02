@@ -1,6 +1,6 @@
 # RAT IN A MAZE
 
-In this project, we find a path for the rat in a maze which startd at (1, 1) and needs to go to (m, n). To simplify things, we only use a square grid (so, m=n). The user can specify walls according to their own will using the mouse. The second part of this project is to also find a _shortest path_ for the rat.
+In this project, we find a path for the rat in a maze which started at (1, 1) and needs to go to (m, n). To simplify things, we only use a square grid (so, m=n). The user can specify walls according to their own will using the mouse. The second part of this project is to also find a _shortest path_ for the rat.
 
 ## path()
 
