@@ -56,10 +56,10 @@ void init_smaze(int m)
 {
 	for (int i=0;i<=m+1;i++)
 	{
-		smaze[0][i] = 1;	        // top
+		smaze[0][i] = 1;	                  // top
 		smaze[i][m+1] = 1;			  // right
 		smaze[m+1][i] = 1;			  // bottom
-		smaze[i][0] = 1;			    // left
+		smaze[i][0] = 1;			  // left
 	}
 }
 
@@ -227,7 +227,7 @@ void path(int m, int n)
 		bool path_found = false;
 
 		push_stack(1, 1, 1);		// (1, 1) is the starting location of rat; 1 is the previous direction.
-		mark[1][1]=5;				// Marking that we already are in (1, 1)
+		mark[1][1]=5;			// Marking that we already are in (1, 1)
 		while (top != -1)
 		{
 			// maze[x][y] = 8 for backtracking
@@ -273,12 +273,12 @@ void path(int m, int n)
 					path_found = true;
 
 					cout << "\nPath travelled:" << endl;
-					for (int p=0; p <= top; p++) // Prints the path travelled
+					for (int p=0; p <= top; p++) 	// Prints the path travelled
 					{
 						cout << stack[p][0] << " " << stack[p][1] << endl;
 						::maze[stack[p][0]][stack[p][1]] = 9;
 					}
-					while (top >= 0) // pops the complete stack
+					while (top >= 0) 		// pops the complete stack
 					{
 						pop_stack();
 					}
@@ -289,7 +289,7 @@ void path(int m, int n)
 					// Since x, y is not added in the stack, we update it seperately in our display path array
 					path_to_display[display_path_len][0] = x;
 					path_to_display[display_path_len][1] = y;
-					path_to_display[display_path_len][2] = 0; // 0 for path and 1 for backtracking
+					path_to_display[display_path_len][2] = 0;               // 0 for path and 1 for backtracking
 					display_path_len++;
 
 					cout << m << " " << n << endl;
@@ -301,7 +301,7 @@ void path(int m, int n)
 				else if ((maze[g][h] == 0) && (mark[g][h] == 0))
 				{
 					mark[g][h] = 5;  		// Marking that we have already entered this locatiion
-					push_stack(x, y, dir);  // Adding current location and direction to the stack
+					push_stack(x, y, dir);         // Adding current location and direction to the stack
 
 					x = g;					// Updating current coordinates to new coordinates
 					y = h;
@@ -347,7 +347,7 @@ int shortest_path(int m, int n)
 		call_once_sp = true;	
 
 		int neighbour[2];	  // Neighbouring location | neighbour[0] -> row; neighbour[1] -> column
-		int here[2];		    // current location	     | here[0] -> row; here[1] -> column
+		int here[2];		  // current location	   | here[0] -> row; here[1] -> column
 
 		// offset table for movement
 		int offset[4][2] =
@@ -376,7 +376,7 @@ int shortest_path(int m, int n)
 				// If it is 1 it is a wall
 				// If it is other than 0, we have already visited there
 				// If it is 0, we have not come to this location earier
-				if(smaze[neighbour[0]][neighbour[1]] == 0)					              	// If it is a new location
+				if(smaze[neighbour[0]][neighbour[1]] == 0)					      // If it is a new location
 				{
 					smaze[neighbour[0]][neighbour[1]] = smaze[here[0]][here[1]]+1;
 					if ((neighbour[0] == m) && (neighbour[1] == n))			              // If it is the final location
@@ -446,9 +446,9 @@ int main()
 	// Colors
 	Color c1(227, 232, 240, 255);   // lighter color for path
 	Color c2(130, 128, 127, 255);   // darker color for backtracking
-	Color c3(65, 71, 84, 255);    // Color for walls
-	Color c4(116, 116, 116, 255);  // Color for finish line
-	Color c5(225, 215, 190, 255);  // Color for checking block (not used)
+	Color c3(65, 71, 84, 255);      // Color for walls
+	Color c4(116, 116, 116, 255);   // Color for finish line
+	Color c5(225, 215, 190, 255);   // Color for checking block (not used)
 
 	// Wall block in maze
 	RectangleShape wall (Vector2f(50.0f, 50.0f)); //Just the height and the width inside Vector
@@ -475,6 +475,9 @@ int main()
 	Texture endTexture;
 	endTexture.loadFromFile("C:/Users/User/Documents/sfml-vscode-boilerplate/src/finish.png");
 	finish.setTexture(&endTexture);
+	
+	// wall texture image - https://image.freepik.com/free-vector/cartoon-stone-texture_1110-576.jpg
+	// finish flag image  - https://www.seekpng.com/png/detail/333-3333338_finish-vlag-png-fast-and-furious-flag.png
 
 	int m, n;
 	int posx, posy;					// Used while displaying the path
