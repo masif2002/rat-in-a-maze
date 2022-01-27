@@ -26,8 +26,9 @@ According to the four neighbour approach we use, we check all the four neighbour
 
 To execute the program,
 
-- First, you need to set up your editor to run **SFML**. This can be done by following along the tutorials in the internet. With that, you'll also know how to run the program.
+- First, you need to set up your editor to run **SFML**. This can be done by following along the tutorials in the internet. With that, you'll also know how to run the program. The tutorial I followed to run sfml in vscode can be found [here](https://www.youtube.com/watch?v=mqH-EnR0N6A).
 - Once all of that is done, you can run _**Main.cpp**_ and you need to specify the grid size for the maze in the output console. The maximum grid size is 10x10 for this program.
+
 - The next step is to set the walls for the maze by clicking anywhere in the maze and then press the key **P** to display the path of the rat. The path is also printed in the output console.
 - To go ahead and find the shortest path, you need to press the key **S** which clears the screen. Then you need to set the walls again. After setting the walls, you press the key **D** to display the shortest path.
 - You can press the **Escape** key to exit the program anytime.
