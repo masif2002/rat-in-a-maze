@@ -47,4 +47,3 @@ To execute the program,
 - The path coordinates for shortest path are also printed in the output console.
 ![path-coordinates](https://user-images.githubusercontent.com/94846379/151397308-6b72a01c-5ecc-411a-adba-4001d3bb97c6.png)
 - You can press the **Escape** key to exit the program anytime.
-- 
