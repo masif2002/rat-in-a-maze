@@ -28,7 +28,23 @@ To execute the program,
 
 - First, you need to set up your editor to run **SFML**. This can be done by following along the tutorials in the internet. With that, you'll also know how to run the program. The tutorial I followed to run sfml in vscode can be found [here](https://www.youtube.com/watch?v=mqH-EnR0N6A).
 - Once all of that is done, you can run _**Main.cpp**_ and you need to specify the grid size for the maze in the output console. The maximum grid size is 10x10 for this program.
+![grid-size](https://user-images.githubusercontent.com/94846379/151377483-e5f19c6e-943d-4383-8e7b-e8bc8f19f422.png)
 
-- The next step is to set the walls for the maze by clicking anywhere in the maze and then press the key **P** to display the path of the rat. The path is also printed in the output console.
-- To go ahead and find the shortest path, you need to press the key **S** which clears the screen. Then you need to set the walls again. After setting the walls, you press the key **D** to display the shortest path.
+- Then a new window displaying the maze will pop up
+![maze](https://user-images.githubusercontent.com/94846379/151377683-06ec4c5b-9490-401e-abbf-68a318783ff3.png)
+- The next step is to set the walls for the maze by clicking anywhere in the maze 
+![setting-walls](https://user-images.githubusercontent.com/94846379/151382361-08f568d3-e456-4872-93d4-a1ef1d55713a.png)
+![maze-with-walls](https://user-images.githubusercontent.com/94846379/151386980-30923e0a-53ed-4922-86d2-4cf68f2e887a.PNG)
+
+- After setting the walls, press the key **P** to display the path of the rat. 
+![path](https://user-images.githubusercontent.com/94846379/151386861-6ad4a6b0-9a9e-4aa3-a3c7-84938c925eaf.PNG)
+- The path is also printed in the output console.
+![path-coordinates](https://user-images.githubusercontent.com/94846379/151388810-ab2f8b88-b9fc-4c02-a581-69f4629a40cf.png)
+- To go ahead and find the shortest path, you need to press the key **S** which clears the screen. 
+![maze-reset](https://user-images.githubusercontent.com/94846379/151388964-d9acc89c-2c10-4cff-bf19-2e947873cb50.png)
+- Then you need to set the walls again. After setting the walls, you press the key **D** to display the shortest path. 
+![shortest-path](https://user-images.githubusercontent.com/94846379/151391314-afd64a61-356b-4516-919d-7610fb80a5b7.png)
+- The path coordinates for shortest path are also printed in the output console.
+![path-coordinates](https://user-images.githubusercontent.com/94846379/151397308-6b72a01c-5ecc-411a-adba-4001d3bb97c6.png)
 - You can press the **Escape** key to exit the program anytime.
+- 
