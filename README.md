@@ -42,7 +42,7 @@ To execute the program,
 ![path-coordinates](https://user-images.githubusercontent.com/94846379/151388810-ab2f8b88-b9fc-4c02-a581-69f4629a40cf.png)
 - To go ahead and find the shortest path, you need to press the key **S** which clears the screen. 
 ![maze-reset](https://user-images.githubusercontent.com/94846379/151388964-d9acc89c-2c10-4cff-bf19-2e947873cb50.png)
-- Then you need to set the walls again. After setting the walls, you press the key **D** to display the shortest path. 
+- Then you need to set the walls again. After setting the walls, you press the key **D** to display the shortest path.  
 ![shortest-path](https://user-images.githubusercontent.com/94846379/151391314-afd64a61-356b-4516-919d-7610fb80a5b7.png)
 - The path coordinates for shortest path are also printed in the output console.
 ![path-coordinates](https://user-images.githubusercontent.com/94846379/151397308-6b72a01c-5ecc-411a-adba-4001d3bb97c6.png)
